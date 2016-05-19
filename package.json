@@ -1,0 +1,25 @@
+{
+  "name": "mkdirp",
+  "version": "0.0.1",
+  "description": "node fs mkdir -p",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hagitarowe/mkdirp.git"
+  },
+  "keywords": [
+    "node",
+    "fs",
+    "mkdir",
+    "-p"
+  ],
+  "author": "George Hagita Rowe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hagitarowe/mkdirp/issues"
+  },
+  "homepage": "https://github.com/hagitarowe/mkdirp#readme"
+}
