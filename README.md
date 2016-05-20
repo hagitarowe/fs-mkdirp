@@ -4,7 +4,9 @@ node fs mkdir -p
 
 Demo
 ---------------------
+```bash
 npm start
+```
 Creates a directory with the path "./demo/dir/subir".
 
 Usage
@@ -25,6 +27,7 @@ mkdirp( "./directory/dir/subdir", function( error, results ) {
  }
 });
 ```
+Result:
 * mkdirp
   * directory
     * dir
@@ -38,6 +41,7 @@ var path = "directory/dir/subdir/";
 var path = "/directory/dir/subdir";
 var path = "./directory/dir/subdir";
 ```
+Result:
 * mkdirp
   * directory
     * dir
@@ -46,6 +50,7 @@ var path = "./directory/dir/subdir";
 ```js
 var path = "../directory/dir/subdir";
 ```
+Result:
 * parent
   * mkdirp
   * directory
@@ -55,6 +60,7 @@ var path = "../directory/dir/subdir";
 ```js
 var path = "../../directory/dir/subdir";
 ```
+Result:
 * parent
   * parent
     * mkdirp
