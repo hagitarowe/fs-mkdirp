@@ -25,6 +25,10 @@ mkdirp( "./directory/dir/subdir", function( error, results ) {
  }
 });
 ```
+* mkdirp
+  * directory
+    * dir
+      * subdir
 
 ### path
 string
@@ -34,29 +38,29 @@ var path = "directory/dir/subdir/";
 var path = "/directory/dir/subdir";
 var path = "./directory/dir/subdir";
 ```
-  mkdirp
-  |_directory
-    |_dir
-      |_subdir
+* mkdirp
+  * directory
+    * dir
+      * subdir
 
 ```js
 var path = "../directory/dir/subdir";
 ```
-  parent
-  |_mkdirp
-  |_directory
-    |_dir
-      |_subdir
+* parent
+  * mkdirp
+  * directory
+    * dir
+      * subdir
 
 ```js
 var path = "../../directory/dir/subdir";
 ```
-  parent
-  |_parent
-  | |_mkdirp
-  |_directory
-    |_dir
-      |_subdir
+* parent
+  * parent
+    * mkdirp
+  * directory
+    * dir
+      * subdir
 
 ### callback
 function
