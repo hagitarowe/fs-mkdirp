@@ -1,4 +1,13 @@
 var mkdirp = require( "./mkdirp.js" );
-mkdirp( "demo/dir/subdir", function( results ) {
-  console.log( results );
-}, []);
+mkdirp( "/demo/dir/subdir/", function( error, results ) {
+  if( !error ) {
+    results.forEach(function( result ) {
+      console.log( result );
+    });
+  }
+  else {
+    results.forEach(function( result ) {
+      console.log( result );
+    });
+  }
+});

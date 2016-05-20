@@ -2,23 +2,56 @@ mkdirp
 ====================
 node fs mkdir -p
 
-
-
-
-A Second Level Header
+Demo
 ---------------------
+> npm start
+Creates a directory with the path "./demo/dir/subir".
 
-Now is the time for all good men to come to
-the aid of their country. This is just a
-regular paragraph.
+Usage
+---------------------
+### mkdirp( path, callback );
+> mkdirp( "./directory/dir/subdir", function( error, results ) {
+>  if( !error ) {
+>    results.forEach(function( result ) {
+>      console.log( result );
+>    });
+>  }
+>  else {
+>    results.forEach(function( result ) {
+>      console.log( result );
+>    });
+>  }
+> });
 
-The quick brown fox jumped over the lazy
-dog's back.
+### path
+string
+> var path = "directory/dir/subdir";
+> var path = "directory/dir/subdir/";
+> var path = "/directory/dir/subdir";
+> var path = "./directory/dir/subdir";
+mkdirp
+|_directory
+  |_dir
+    |_subdir
 
-### Header 3
+> var path = "../directory/dir/subdir";
+parent
+|_mkdirp
+|_directory
+  |_dir
+    |_subdir
 
-> This is a blockquote.
-> 
-> This is the second paragraph in the blockquote.
->
-> ## This is an H2 in a blockquote
+> var path = "../../directory/dir/subdir";
+parent
+|_parent
+| |_mkdirp
+|_directory
+  |_dir
+    |_subdir
+
+### callback
+function
+> var callback = function( error, results ) {
+>   // bool error
+>   // array results
+> };
