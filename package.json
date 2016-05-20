@@ -4,7 +4,7 @@
   "description": "node fs mkdir -p",
   "main": "index.js",
   "scripts": {
-    "demo": "node demo"
+    "start": "node demo"
   },
   "repository": {
     "type": "git",
