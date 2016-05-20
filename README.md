@@ -11,30 +11,48 @@ Usage
 ---------------------
 ### mkdirp( path, callback );
 > mkdirp( "./directory/dir/subdir", function( error, results ) {
+>
 >  if( !error ) {
+>
 >    results.forEach(function( result ) {
+>
 >      console.log( result );
+>
 >    });
+>
 >  }
+>
 >  else {
+>
 >    results.forEach(function( result ) {
+>
 >      console.log( result );
+>
 >    });
+>
 >  }
+>
 > });
+
+README
 
 ### path
 string
 > var path = "directory/dir/subdir";
+>
 > var path = "directory/dir/subdir/";
+>
 > var path = "/directory/dir/subdir";
+>
 > var path = "./directory/dir/subdir";
+
 mkdirp
 |_directory
   |_dir
     |_subdir
 
 > var path = "../directory/dir/subdir";
+
 parent
 |_mkdirp
 |_directory
@@ -42,6 +60,7 @@ parent
     |_subdir
 
 > var path = "../../directory/dir/subdir";
+
 parent
 |_parent
 | |_mkdirp
@@ -52,6 +71,9 @@ parent
 ### callback
 function
 > var callback = function( error, results ) {
+>
 >   // bool error
+>
 >   // array results
+>
 > };
