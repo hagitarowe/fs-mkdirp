@@ -4,10 +4,10 @@ node fs mkdir -p
 
 Demo
 ---------------------
+Create a directory with the path "./demo/dir/subir".
 ```bash
 npm start
 ```
-Creates a directory with the path "./demo/dir/subir".
 
 Usage
 ---------------------
