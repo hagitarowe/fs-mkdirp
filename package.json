@@ -1,8 +1,8 @@
 {
   "name": "mkdirp",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "node fs mkdir -p",
-  "main": "index.js",
+  "main": "mkdirp.js",
   "scripts": {
     "start": "node demo"
   },
