@@ -34,29 +34,29 @@ var path = "directory/dir/subdir/";
 var path = "/directory/dir/subdir";
 var path = "./directory/dir/subdir";
 ```
-mkdirp
-|_directory
-  |_dir
-    |_subdir
+  mkdirp
+  |_directory
+    |_dir
+      |_subdir
 
 ```js
 var path = "../directory/dir/subdir";
 ```
-parent
-|_mkdirp
-|_directory
-  |_dir
-    |_subdir
+  parent
+  |_mkdirp
+  |_directory
+    |_dir
+      |_subdir
 
 ```js
 var path = "../../directory/dir/subdir";
 ```
-parent
-|_parent
-| |_mkdirp
-|_directory
-  |_dir
-    |_subdir
+  parent
+  |_parent
+  | |_mkdirp
+  |_directory
+    |_dir
+      |_subdir
 
 ### callback
 function
