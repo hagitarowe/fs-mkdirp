@@ -4,7 +4,7 @@
   "description": "node fs mkdir -p",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "demo": "node demo"
   },
   "repository": {
     "type": "git",
