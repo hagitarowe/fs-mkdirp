@@ -40,10 +40,12 @@ Result:
 ### path
 string
 ```js
-var path = "directory/dir/subdir";
-var path = "directory/dir/subdir/";
-var path = "/directory/dir/subdir";
-var path = "./directory/dir/subdir";
+var path;
+path = "directory/dir/subdir";
+path = "directory/dir/subdir/";
+path = "/directory/dir/subdir";
+path = "./directory/dir/subdir";
+mkdirp( path );
 ```
 Result:
 * mkdirp
@@ -53,6 +55,7 @@ Result:
 
 ```js
 var path = "../directory/dir/subdir";
+mkdirp( path );
 ```
 Result:
 * parent
@@ -61,8 +64,23 @@ Result:
     * dir
       * subdir
 
+### callback
+function
 ```js
 var path = "../../directory/dir/subdir";
+var callback = function( error, results ) {
+  if( !error ) {
+    results.forEach(function( result ) {
+      console.log( result );
+    });
+  }
+  else {
+    results.forEach(function( result ) {
+      console.log( result );
+    });
+  }
+};
+mkdirp( path, callback );
 ```
 Result:
 * parent
@@ -71,12 +89,3 @@ Result:
   * directory
     * dir
       * subdir
-
-### callback
-function
-```js
-var callback = function( error, results ) {
-  // bool error
-  // array results
-};
-```
