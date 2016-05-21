@@ -1,5 +1,6 @@
 var mkdirp = require( "./fs-mkdirp.js" );
-mkdirp( "/demo/dir/subdir/", function( error, results ) {
+var path = "./demo/dir/subdir";
+var callback = function( error, results ) {
   if( !error ) {
     results.forEach(function( result ) {
       console.log( result );
@@ -10,4 +11,5 @@ mkdirp( "/demo/dir/subdir/", function( error, results ) {
       console.log( result );
     });
   }
-});
+};
+mkdirp( path, callback );

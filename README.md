@@ -1,4 +1,4 @@
-mkdirp
+fs-mkdirp
 ====================
 node fs mkdir -p
 
