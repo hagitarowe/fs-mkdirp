@@ -1,14 +1,14 @@
 {
-  "name": "mkdirp",
-  "version": "2.0.0",
+  "name": "fs-mkdirp",
+  "version": "3.0.0",
   "description": "node fs mkdir -p",
-  "main": "mkdirp.js",
+  "main": "fs-mkdirp.js",
   "scripts": {
     "start": "node demo"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hagitarowe/mkdirp.git"
+    "url": "git+https://github.com/hagitarowe/fs-mkdirp.git"
   },
   "keywords": [
     "node",
@@ -19,7 +19,7 @@
   "author": "George Hagita Rowe",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hagitarowe/mkdirp/issues"
+    "url": "https://github.com/hagitarowe/fs-mkdirp/issues"
   },
-  "homepage": "https://github.com/hagitarowe/mkdirp#readme"
+  "homepage": "https://github.com/hagitarowe/fs-mkdirp#readme"
 }

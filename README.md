@@ -15,9 +15,9 @@ Result:
 
 Usage
 ---------------------
-
 ### mkdirp( path, callback );
 ```js
+var mkdirp = require( "./fs-mkdirp.js" );
 mkdirp( "./directory/dir/subdir", function( error, results ) {
  if( !error ) {
    results.forEach(function( result ) {
@@ -40,6 +40,7 @@ Result:
 ### path
 string
 ```js
+var mkdirp = require( "./fs-mkdirp.js" );
 var path;
 path = "directory/dir/subdir";
 path = "directory/dir/subdir/";
@@ -54,6 +55,7 @@ Result:
       * subdir
 
 ```js
+var mkdirp = require( "./fs-mkdirp.js" );
 var path = "../directory/dir/subdir";
 mkdirp( path );
 ```
@@ -67,6 +69,7 @@ Result:
 ### callback
 function
 ```js
+var mkdirp = require( "./fs-mkdirp.js" );
 var path = "../../directory/dir/subdir";
 var callback = function( error, results ) {
   if( !error ) {
