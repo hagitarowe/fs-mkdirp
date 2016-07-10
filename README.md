@@ -15,13 +15,11 @@ Result:
 
 Usage
 ---------------------
-var mkdirp = require( "./fs-mkdirp" );
-
 var $mkdirp = require( "./fs-mkdirp-p" );
 
 ## Promise
 ```js
-$mkdirp( path ).then(function( results ) {
+$mkdirp( "./directory/dir/subdir" ).then(function( results ) {
   var error = results.error;
   var log = results.log;
   if( !error ) {
@@ -35,6 +33,13 @@ $mkdirp( path ).then(function( results ) {
   });
 });
 ```
+Result:
+* mkdirp
+  * directory
+    * dir
+      * subdir
+
+var mkdirp = require( "./fs-mkdirp" );
 
 ## Callback
 ```js
