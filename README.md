@@ -15,20 +15,38 @@ Result:
 
 Usage
 ---------------------
-### mkdirp( path, callback );
+var mkdirp = require( "./fs-mkdirp" );
+var $mkdirp = require( "./fs-mkdirp-p" );
+
+## Promise
 ```js
-var mkdirp = require( "./fs-mkdirp.js" );
+$mkdirp( path ).then(function( results ) {
+  var error = results.error;
+  var log = results.log;
+  if( !error ) {
+    // do something
+  }
+  else {
+    // error
+  }
+  log.forEach(function( result ) {
+    console.log( result );
+  });
+});
+```
+
+## Callback
+```js
 mkdirp( "./directory/dir/subdir", function( error, results ) {
- if( !error ) {
-   results.forEach(function( result ) {
-     console.log( result );
-   });
- }
- else {
-   results.forEach(function( result ) {
-     console.log( result );
-   });
- }
+  if( !error ) {
+    // do something
+  }
+  else {
+    // error
+  }
+  results.forEach(function( result ) {
+    console.log( result );
+  });
 });
 ```
 Result:
