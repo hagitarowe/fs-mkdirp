@@ -16,6 +16,7 @@ Result:
 Usage
 ---------------------
 var mkdirp = require( "./fs-mkdirp" );
+
 var $mkdirp = require( "./fs-mkdirp-p" );
 
 ## Promise
@@ -58,7 +59,6 @@ Result:
 ### path
 string
 ```js
-var mkdirp = require( "./fs-mkdirp.js" );
 var path;
 path = "directory/dir/subdir";
 path = "directory/dir/subdir/";
@@ -73,7 +73,6 @@ Result:
       * subdir
 
 ```js
-var mkdirp = require( "./fs-mkdirp.js" );
 var path = "../directory/dir/subdir";
 mkdirp( path );
 ```
